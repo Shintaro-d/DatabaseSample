@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/EaSetDateBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style_2"
+        android:text="@string/btnSetDate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EaVguideline1"
+        app:layout_constraintTop_toBottomOf="@+id/EaDisplayDateTv" />
+
+    <Button
+        android:id="@+id/EaInputScrRegistDataBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_style_1"
+        android:text="@string/btnUpdateData"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EaVguideline1"
+        app:layout_constraintTop_toBottomOf="@+id/EaSetDateBtn" />
+
+    <EditText
+        android:id="@+id/EaInputContentEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EaVguideline1"
+        app:layout_constraintTop_toBottomOf="@+id/EaErrorInputContentTv" />
+
+    <EditText
+        android:id="@+id/EaInputPriceEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EaVguideline1"
+        app:layout_constraintTop_toBottomOf="@+id/EaErrorInputPriceTv"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/EaImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/EaHguideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header_xxxhdpi_1280" />
+
+    <TextView
+        android:id="@+id/EaInputPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvPrice"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBaseline_toBaselineOf="@+id/EaInputPriceEt"
+        app:layout_constraintEnd_toStartOf="@+id/EaInputPriceEt" />
+
+    <TextView
+        android:id="@+id/EaInputContentTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvContent"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBaseline_toBaselineOf="@+id/EaInputContentEt"
+        app:layout_constraintEnd_toStartOf="@+id/EaInputContentEt" />
+
+    <TextView
+        android:id="@+id/EaInputDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvDate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/EaDisplayDateTv"
+        app:layout_constraintEnd_toStartOf="@+id/EaVguideline1" />
+
+    <TextView
+        android:id="@+id/EaDisplayDateTv"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/EaVguideline1"
+        app:layout_constraintTop_toBottomOf="@+id/EaErrorInputDateTv" />
+
+    <TextView
+        android:id="@+id/EaErrorInputContentTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EaVguideline1"
+        app:layout_constraintTop_toTopOf="@+id/EaHguideline1"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/EaErrorInputPriceTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EaVguideline1"
+        app:layout_constraintTop_toTopOf="@+id/EaHguideline2" />
+
+    <TextView
+        android:id="@+id/EaErrorInputDateTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/EaDisplayDateTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EaVguideline1"
+        app:layout_constraintTop_toTopOf="@+id/EaHguideline3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/EaVguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="48dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/EaHguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="85dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/EaHguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="149dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/EaHguideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="213dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/EaHguideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="75dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

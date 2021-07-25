@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">account_book_app</string>
+    <string name="tvContent">内容</string>
+    <string name="tvPrice">金額</string>
+    <string name="tvDate">日付</string>
+    <string name="tvTo">～</string>
+    <string name="tvDisplayStartDate">表示開始日指定</string>
+    <string name="tvDisplayEndDate">表示終了日指定</string>
+    <string name="btnRegistData">データ登録</string>
+    <string name="btnUpdateData">データ更新</string>
+    <string name="btnSetDate">日付設定</string>
+    <string name="noticeInputName">※名前を入力してください。</string>
+    <string name="inputOnlyNumber">※数値のみを入力してください。</string>
+    <string name="InputMaxPrice">※金額は「2,147,483,647」円までの範囲で入力してください。</string>
+    <string name="selectTask">処理選択</string>
+    <string name="askingTaskType">どの処理を実行しますか？</string>
+    <string name="edit">編集</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="delete">削除</string>
+    <string name="priceUnit">円</string>
+    <string name="priceSum">合計：</string>
+    <string name="selectFutureDate">※表示開始日が表示終了日より未来の日付に設定されています。</string>
+    <string name="selectPastDate">※表示終了日が表示開始日より過去の日付に設定されています。</string>
+    <string name="canNotGetData">データが取得できません。</string>
+    <string name="successRegistData">データを登録しました。</string>
+    <string name="canNotAddData">データが登録できません。</string>
+    <string name="successUpdateData">データを更新しました。</string>
+    <string name="canNotUpdateData">データが更新できません。</string>
+    <string name="successDeleteData">データを削除しました。</string>
+    <string name="canNotDeleteData">データが削除できません。</string>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/MaRegistDataBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_style_1"
+        android:text="@string/btnRegistData"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MaBorder1" />
+
+    <Button
+        android:id="@+id/MaSelectStartDateBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/button_style_2"
+        android:text="@string/tvDisplayStartDate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/MaSelectEndDateBtn"
+        app:layout_constraintEnd_toStartOf="@+id/MaSelectEndDateBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/MaSelectEndDateBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_style_2"
+        android:text="@string/tvDisplayEndDate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/MaSelectStartDateBtn"
+        app:layout_constraintTop_toTopOf="@+id/MaEndDateTv" />
+
+    <ImageView
+        android:id="@+id/MaImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/MaHguideline2"
+        app:srcCompat="@drawable/header_xxxhdpi_1280" />
+
+    <ImageView
+        android:id="@+id/MaBorder4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/MaSumPriceTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/separate_border" />
+
+    <ImageView
+        android:id="@+id/MaBorder2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MaHguideline1"
+        app:srcCompat="@drawable/separate_border" />
+
+    <ImageView
+        android:id="@+id/MaBorder3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MaSelectStartDateBtn"
+        app:srcCompat="@drawable/separate_border" />
+
+
+    <ImageView
+        android:id="@+id/MaBorder1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/MaRegistDataBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MaImageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/separate_border" />
+
+    <TextView
+        android:id="@+id/MaStartDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/MaToTv"
+        app:layout_constraintEnd_toStartOf="@+id/MaToTv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MaBorder2" />
+
+    <TextView
+        android:id="@+id/MaToTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTo"
+        app:layout_constraintEnd_toStartOf="@+id/MaEndDateTv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/MaStartDateTv"
+        app:layout_constraintTop_toBottomOf="@+id/MaErrorDateTv" />
+
+    <TextView
+        android:id="@+id/MaEndDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/MaToTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/MaToTv"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <TextView
+        android:id="@+id/MaErrorDateTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MaBorder2" />
+
+    <TextView
+        android:id="@+id/MaSumPriceTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="25sp"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="right|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/MaHguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="135dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/MaHguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="75dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MaAccountRecyclerView"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/MaBorder4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MaBorder3"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
